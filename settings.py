@@ -73,6 +73,7 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'pathagar.urls'
+LOGIN_REDIRECT_URL = '/'
 
 INTERNAL_IPS = ('127.0.0.1',)
 

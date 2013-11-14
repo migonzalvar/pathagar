@@ -92,9 +92,9 @@ method="get">
 {% if user.is_authenticated %}
 <span>Welcome, {{ user.username }}&nbsp;&nbsp;</span>
 <a href="{% url pathagar.books.views.add_book %}">Add Book</a>&nbsp;&nbsp;
-<a href="{% url django.contrib.auth.views.logout %}?next=/">Log Out</a>
+<a href="{% url django.contrib.auth.views.logout %}?next={% url pathagar.books.views.home %}">Log Out</a>
 {% else %}
-<a href="{% url django.contrib.auth.views.login %}?next=/">Log In</a>
+<a href="{% url django.contrib.auth.views.login %}">Log In</a>
 {% endif %}
 </div> 
 
