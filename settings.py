@@ -80,11 +80,17 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates'),
 )
 
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    ('static_media', os.path.join(os.path.dirname(__file__), 'static_media')),
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.staticfiles',
     'django.contrib.admin',
     'tagging', # TODO old
     'taggit',
