@@ -10,8 +10,7 @@ setup(name='pathagar',
 		'pathagar.books.management.commands'
 		],
 	package_dir = {'pathagar':''},
-	package_data = {'pathagar':['static_media/images/*',
-		'static_media/js/*',
+	package_data = {'pathagar':[
 		'static_media/style/*.css',
 		'static_media/style/blueprint/*.css',
 #		'static_media/style/blueprint/plugins/rtl/*.txt',
@@ -36,6 +35,8 @@ setup(name='pathagar',
 		'setup.*',
 		'books/fixtures/*',
 		'books/templates/*',
+		'books/static/images/*',
+		'books/static/js/*',
 		]}
 	)
 
