@@ -26,7 +26,7 @@ $(document).ready(function()
 {% if action == 'add' %}
   action="{% url pathagar.books.views.add_book %}"
 {% else %}
-  action="{% url pathagar.books.views.add_book book.pk %}"
+  action="{% url pathagar.books.views.edit_book book.pk %}"
 {% endif %}
 method="POST">{% csrf_token %}
 <fieldset>
